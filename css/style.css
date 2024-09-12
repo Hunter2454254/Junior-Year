@@ -1,70 +1,77 @@
 body {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #EBE7E7;
-  }
-  
-  svg {
-    width: 256px;
-    height: 256px;
-  }
-  
-  /* SMOKE */
-  #smoke-1 {
-    stroke-dasharray: 0, 10;
-    animation: smoke 6s ease infinite;
-  }
-  
-  #smoke-2 {
-    stroke-dasharray: 0, 10;
-    animation: smoke 6s 0.5s ease infinite;
-  }
-  
-  @keyframes smoke {
-    0% { stroke-dasharray: 0, 10; }
-    50% { stroke-dasharray: 10, 0; }
-    100% { stroke-dasharray: 10, 0; opacity: 0; }
-  }
-  
-  /* WRITING */
-  #line-1 {
-    opacity: 0;
-    animation: writing 0.5s linear forwards;
-  }
-  
-  #line-2 {
-    opacity: 0;
-    animation: writing 0.5s 1s linear forwards;
-  }
-  
-  #line-3 {
-    opacity: 0;
-    animation: writing 0.5s 1.5s linear forwards;
-  }
-  
-  #line-4 {
-    opacity: 0;
-    animation: writing 0.5s 2s linear forwards;
-  }
-  
-  @keyframes writing {
-    0% { width: 0px; opacity: 1;}
-    100% { width: 14px; opacity: 1;}
-  }
-  
-  
+  font-family: 'Dancing Script', cursive;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #333;
+  padding-top: 20px;
+}
 
+.jumbotron {
+  background: url('https://cdn.hswstatic.com/gif/redefinefourseasons-1.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
 
+.jumbotron h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
 
+.btn-custom {
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
 
+.btn-custom:hover {
+  background-color: #ff4d4d;
+  transform: scale(1.05);
+}
 
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
 
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 5px solid #ff6f61;
+}
 
+.card-body {
+  padding: 15px;
+}
 
+.card-body a {
+  font-weight: bold;
+}
 
+.svg-container {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
 
- 
+.svg-container svg {
+  max-width: 100%;
+  height: auto;
+}
